@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+         $(function () {
+             var product_list="";
+             var i=0;
+             var text=["","Sacai x LDWaffle 'Gery'\n ",
+                 "Sacai x LDWaffle 'Varsity Blue'\n",
+                 "Sacai x LDWaffle 'Gery\n",
+                 "Sacai x LDWaffle 'Red",
+                 "Sacai x LDWaffle 'Pink",
+                 "Sacai x LDWaffle 'Black"];
+             for (let i = 1; i <7; i++) {
+                 var li='<div class="product-item">\n' +
+                     '                <a href="itemdetail'+i+'.html">\n' +
+                     '                  <img src="img/shose/'+i+'.jpg" alt="product" class="img-xyz"></a>\n' +
+                     '                <div class="product-text"> <a href="itemdetail.html" class="text-link">'+text[i]+'</a></div>\n' +
+                     '              </div>';
+                 product_list+=li;
+             }
+             $("#ProductContainer").html(product_list);
+         })
+    </script>
+</head>
+<body>
+
+<header>
+    <div  class="headermeau clear">
+        <div class="tit-header">
+            <h1 style="margin-bottom: 30px;margin-left: 30px">The DEWU</h1>
+            <br/><p style="color: #d1c0a5;margin-left: 30px"> Authentic Sneaker Store</p><br/>
+        </div>
+        <div class="title">
+            <div class="headermeau"  >
+                <nav class="menu" >
+                    <ul >
+                        <li>
+                            <a href="product.html"><strong style="color: black;">What's New</strong></a>
+                        </li>
+                        <li>
+                            <a href="productall.html"><strong style="color: black;">Shop All</strong></a>
+                        </li>
+                        <li>
+                            <a href="about.html"><strong style="color: black;">About</strong></a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><strong style="color: black;">Contact</strong></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><strong style="color: black;">GO Home</strong></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
+<div class="mainWrapper ">
+    <section class="element" id="Product">
+        <div class="line-border">
+            <h3>What's New</h3>
+        </div>
+        <br>
+        <br>
+        <div id="ProductContainer" class="ProductContainer">
+        </div>
+    </section>
+</div>
+</div>
+
+<footer>
+    <div class="footage">
+        <div class="footer_text">
+            <h2>Navigation</h2>
+            <h4>About</h4>
+            <h4>Services</h4>
+            <h4>Subscription Plans</h4>
+        </div>
+        <div  class="footer_text1">
+            <h2>Contact</h2>
+            <h4>Location:Suite 2000,125 9 Avenue SE,Calgary,AB,T2G 0P6</h4>
+            <h4>Email Address:support@seerem.com</h4>
+            <h4>Phone:+1 (403)9669848</h4>
+        </div>
+        <div  class="footer_text2">
+            <h2>Social Media</h2>
+            <img src="img/logo.jpg" style="width: 8%;border-radius: 15px">
+            <img src="img/logo1.jpg" style="width: 8%;border-radius: 15px">
+            <img src="img/logo2.jpg" style="width: 8%;border-radius: 15px">
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
