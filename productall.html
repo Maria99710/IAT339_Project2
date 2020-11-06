@@ -23,7 +23,7 @@
                                var li='<div class="product-item">\n' +
                      '                <a href="itemdetail'+j+'.html">\n' +
                      '                  <img src="img/shose/'+i+'.jpg" alt="product" class="img-xyz"></a>\n' +
-                     '                <div class="product-text"> <a href="itemdetail.html" class="text-link">'+text[i]+'</a></div>\n' +
+                     '                <div class="product-text"> <a href="itemdetail'+j+'.htmll" class="text-link">'+text[i]+'</a></div>\n' +
                      '              </div>';
                  product_list+=li;
                  if(j>1){
@@ -41,31 +41,58 @@
 <header>
     <div  class="headermeau clear">
         <div class="tit-header">
-            <h1 style="margin-bottom: 30px;margin-left: 30px">The DEWU</h1>
+            <a href="index.html"><img src="img/dewu.png" style="width:90px;border-radius: 30%;margin-left: 30px"></a>
             <br/><p style="color: #d1c0a5;margin-left: 30px"> Authentic Sneaker Store</p><br/>
-        </div>
-        <div class="title">
-            <div class="headermeau"  >
-                <nav class="menu" >
-                    <ul >
-                        <li>
-                            <a href="product.html"><strong style="color: black;">What's New</strong></a>
-                        </li>
-                        <li>
-                            <a href="productall.html"><strong style="color: black;">Shop All</strong></a>
-                        </li>
-                        <li>
-                            <a href="about.html"><strong style="color: black;">About</strong></a>
-                        </li>
-                        <li>
-                            <a href="contact.html"><strong style="color: black;">Contact</strong></a>
-                        </li>
-                        <li>
-                            <a href="index.html"><strong style="color: black;">GO Home</strong></a>
-                        </li>
-                    </ul>
+            <div  class="pc1">
+                <div class="headermeau" style="overflow: hidden" >
+                    <nav class="menu" >
+                        <ul >
+                            <li>
+                                <a href="product.html"><strong style="color: white">What's New</strong></a>
+                            </li>
+                            <li>
+                                <a href="productall.html"><strong style="color:white;">Shop All</strong></a>
+                            </li>
+                            <li>
+                                <a href="about.html"><strong style="color: white;">About</strong></a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><strong style="color:white;">Contact</strong></a>
+                            </li>
+                            <li>
+                                <a href="index.html"><strong style="color: white;">GO Home</strong></a>
+                            </li>
+                        </ul>
 
-                </nav>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile1" >
+                <div class="headermeau" style="overflow: hidden;margin-left: 30px" >
+                    <nav class="navMenu" >
+                        <ul>
+                            <li> <a href="#"><strong style="color: white">Shop</strong></a>
+                                <ul>
+                                    <li>
+                                      <a href="product.html"><strong style="color: black">What's New</strong></a>
+                                    </li>
+                                    <li>
+                                      <a href="productall.html"><strong style="color:black;">ShopAll</strong></a>
+                                    </li>
+                                    <li>
+                                      <a href="about.html"><strong style="color: black;">About</strong></a>
+                                    </li>
+                                    <li>
+                                      <a href="contact.html"><strong style="color:black;">Contact</strong></a>
+                                    </li>
+                                    <li>
+                                      <a href="index.html"><strong style="color:black;">GO Home</strong></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
@@ -73,7 +100,7 @@
 <br>
 <div class="mainWrapper">
     <section class="element" id="Product">
-        <div class="line-border center">
+        <div class="line-border">
             <h3>Shoes</h3>
         </div>
         <br>
@@ -85,22 +112,29 @@
 <footer>
     <div class="footage">
         <div class="footer_text">
-            <h2>Navigation</h2>
-            <h4>About</h4>
-            <h4>Services</h4>
-            <h4>Subscription Plans</h4>
+            <h6>@202O,DEWU</h6>
+            <h6>All Rights Reserved</h6>
         </div>
         <div  class="footer_text1">
-            <h2>Contact</h2>
-            <h4>Location:Suite 2000,125 9 Avenue SE,Calgary,AB,T2G 0P6</h4>
-            <h4>Email Address:support@seerem.com</h4>
-            <h4>Phone:+1 (403)9669848</h4>
+            <h6>Terms of Use</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Cookies</h6>
+            <h6>Contact</h6>
         </div>
         <div  class="footer_text2">
-            <h2>Social Media</h2>
-            <img src="img/logo.jpg" style="width: 8%;border-radius: 15px">
-            <img src="img/logo1.jpg" style="width: 8%;border-radius: 15px">
-            <img src="img/logo2.jpg" style="width: 8%;border-radius: 15px">
+            <a href="http://www.sfu.ca/~zwa103/IAT339/style%20guide/.html"><h6>Style guide</h6></a>
+            <a href="citation.html"><h6>Citations</h6></a>
+            <h6>Git Repository</h6>
+        </div>
+    </div>
+    <div style="overflow: hidden;">
+        <div class="footer_text3">
+            <h1>DEWU</h1>
+        </div>
+        <div class="footer_text4">
+            <img src="img/logo.jpg" style="width: 25px;border-radius: 15px">
+            <img src="img/logo1.jpg" style="width: 25px;border-radius: 15px">
+            <img src="img/logo2.jpg" style="width: 25px;border-radius: 15px">
         </div>
     </div>
 </footer>
