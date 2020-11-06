@@ -1,1 +1,1 @@
-IAT339_Project2
+Project2
